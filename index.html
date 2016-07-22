@@ -2,15 +2,17 @@
   <head>
     <title>Don't Tread on Emacs</title>
     <style>
-     .statement {
+     #statement {
          color: white;
+         display: table;
          font-family: Source Serif Pro, Bitstream Charter, serif;
          font-size: 125%;
-         margin: 25px;
+         margin: 25px auto auto auto;
+         max-width: 40em;
          text-align: center;
          width: 95%;
      }
-     .linking {
+     #linking {
          text-align: center;
          background: #222222;
          color: gray;
@@ -24,19 +26,21 @@
          margin: 25px auto auto auto;
          max-height: 75%;
      }
+     #parent {
+         height: 95%;
+     }
      a {
          color: #5955a9;
      }
     </style>
   </head>
   <body bgcolor="#333333">
-      <div style="height: 95%">
+      <div id="parent">
           <img id="flag" src="dont-tread-on-emacs.svg" width="95%" align="center">
-
-          <div class="statement">
+          <div id="statement">
               No Emacs-related project should exclude people, boycott other projects, or discourage participation in other projects because of any difference of opinion over non-technical matters. Such divisiveness weakens the community, discourages participation in the Emacs community, and holds back progress in improving software.
           </div>
-          <div class="linking">
+          <div id="linking">
               Feel free to link to this page using the SVG above or this <a href="dont-tread-on-emacs-150.png">smaller PNG image</a>.
           </div>
       </div>
